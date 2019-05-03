@@ -1,7 +1,8 @@
 .question {
   display: block;
+  margin-top: 60px;
 }
 
 .question h2 {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }

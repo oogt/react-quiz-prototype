@@ -35,8 +35,22 @@ class Step extends Component {
       isStepValid: valid
     })
   }
+  _setDataForQuestion(setData, index, data, newValue) {
+    const newData = [...data];
+    newData[index] = newValue;
+    setData(newData);
+  }
+
   render() {
-    const { config, stepNumber, activeStep } = this.props;
+    const {
+      data,
+      setData,
+      config,
+      stepNumber,
+      activeStep,
+      onConfirm,
+      goBack
+    } = this.props;
 
     if (activeStep !== stepNumber) {
       return null;
@@ -44,17 +58,21 @@ class Step extends Component {
 
     return (
       <div>
-        <h1>Current step: {stepNumber}</h1>
-
         {config.questions.map((questionConfig, index) => (
           <Question
             key={`step-${index}`}
             config={questionConfig}
+            onSelect={newValue => this._setDataForQuestion(setData, index, data, newValue)}
+            data={data[index]}
             setQuestionValid={valid => this._setQuestionValid(valid, index)} />
         ))}
 
+        {stepNumber > 1 && (
+          <Button subtle onClick={goBack}>Terug</Button>
+        )}
         <Button
           disabled={!this.state.isStepValid}
+          onClick={() => onConfirm()}
           >Bevestig keuze</Button>
       </div>
     )
