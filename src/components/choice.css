@@ -7,7 +7,7 @@
   margin-right: 10px;
   padding: 40px;
 
-  transition: border-color 1s ease;
+  transition: border-color .2s ease;
 }
 
 .choice.selected {
