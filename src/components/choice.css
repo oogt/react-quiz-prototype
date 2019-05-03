@@ -1,0 +1,14 @@
+.choice {
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 40px;
+
+  transition: border-color 1s ease;
+}
+
+.choice.selected {
+  border-color: black;
+}

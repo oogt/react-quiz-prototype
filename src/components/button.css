@@ -1,0 +1,16 @@
+.button {
+  background: #9ad445;
+  border-radius: 10em;
+  border: 0;
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 2em;;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 40px;
+  outline: 0;
+}
+
+.button:disabled {
+  opacity: .5;
+}
