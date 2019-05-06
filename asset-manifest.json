@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/react-quiz-prototype/static/css/main.0f0dfd50.chunk.css",
-    "main.js": "/react-quiz-prototype/static/js/main.e0aeb0f6.chunk.js",
-    "main.js.map": "/react-quiz-prototype/static/js/main.e0aeb0f6.chunk.js.map",
+    "main.css": "/react-quiz-prototype/static/css/main.d25a7a17.chunk.css",
+    "main.js": "/react-quiz-prototype/static/js/main.e1bd5dae.chunk.js",
+    "main.js.map": "/react-quiz-prototype/static/js/main.e1bd5dae.chunk.js.map",
     "runtime~main.js": "/react-quiz-prototype/static/js/runtime~main.81394735.js",
     "runtime~main.js.map": "/react-quiz-prototype/static/js/runtime~main.81394735.js.map",
-    "static/js/2.5861ad46.chunk.js": "/react-quiz-prototype/static/js/2.5861ad46.chunk.js",
-    "static/js/2.5861ad46.chunk.js.map": "/react-quiz-prototype/static/js/2.5861ad46.chunk.js.map",
+    "static/js/2.c9adb166.chunk.js": "/react-quiz-prototype/static/js/2.c9adb166.chunk.js",
+    "static/js/2.c9adb166.chunk.js.map": "/react-quiz-prototype/static/js/2.c9adb166.chunk.js.map",
     "index.html": "/react-quiz-prototype/index.html",
-    "precache-manifest.ff6676fe0187126d74ad158ae989dfcb.js": "/react-quiz-prototype/precache-manifest.ff6676fe0187126d74ad158ae989dfcb.js",
+    "precache-manifest.524eed3a3c85d1d43dfba111dd085a8c.js": "/react-quiz-prototype/precache-manifest.524eed3a3c85d1d43dfba111dd085a8c.js",
     "service-worker.js": "/react-quiz-prototype/service-worker.js",
-    "static/css/main.0f0dfd50.chunk.css.map": "/react-quiz-prototype/static/css/main.0f0dfd50.chunk.css.map"
+    "static/css/main.d25a7a17.chunk.css.map": "/react-quiz-prototype/static/css/main.d25a7a17.chunk.css.map",
+    "static/media/house2.png": "/react-quiz-prototype/static/media/house2.03c22395.png",
+    "static/media/person1.png": "/react-quiz-prototype/static/media/person1.ec40e7bd.png",
+    "static/media/person2.png": "/react-quiz-prototype/static/media/person2.c687b822.png",
+    "static/media/person3.png": "/react-quiz-prototype/static/media/person3.fe20aa05.png",
+    "static/media/roof1.png": "/react-quiz-prototype/static/media/roof1.254735c6.png",
+    "static/media/roof3.png": "/react-quiz-prototype/static/media/roof3.8cd5e035.png"
   }
 }
