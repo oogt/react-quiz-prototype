@@ -1,8 +1,12 @@
 .question {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
-.question h2 {
-  margin-bottom: 20px;
+.question h1 {
+  margin: 100px auto;
+}
+
+.question .choices {
+  display: flex;
 }

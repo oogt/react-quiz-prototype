@@ -8,19 +8,21 @@ const Question = ({ setQuestionValid, onSelect, data, config}) => {
 
   return (
     <div className="question">
-      <h2>{question}</h2>
+      <h1>{question}</h1>
 
-      {choices.map((choiceConfig, index) => (
-        <Choice
-          key={`choice-${index}`}
-          config={choiceConfig}
-          selectedChoice={data}
-          onSelect={value => {
-            let newValue = value === data ? null : value;
-            onSelect(newValue);
-            setQuestionValid(newValue !== null);
-          }} />
-      ))}
+      <div className="choices">
+        {choices.map((choiceConfig, index) => (
+          <Choice
+            key={`choice-${index}`}
+            config={choiceConfig}
+            selectedChoice={data}
+            onSelect={value => {
+              let newValue = value === data ? null : value;
+              onSelect(newValue);
+              setQuestionValid(newValue !== null);
+            }} />
+        ))}
+      </div>
     </div>
   )
 }

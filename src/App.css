@@ -4,6 +4,8 @@ body, html {
 
 .App {
   text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -39,23 +41,19 @@ body, html {
 .fade-enter {
   max-height: 0;
   opacity: 0.01;
-  transform: scale(.8)
 }
 
 .fade-enter-active {
   max-height: 9999px;
   opacity: 1;
-  transform: scale(1);
   transition: all .5s ease-in-out .5s;
 }
 .fade-exit {
   max-height: 9999px;
   opacity: 1;
-  transform: scale(1);
 }
 .fade-exit-active {
   max-height: 0;
   opacity: 0.01;
-  transform: scale(.8);
   transition: all .5s ease-in-out;
 }
