@@ -3,8 +3,8 @@ import React from 'react';
 import Choice from './choice';
 import './question.css';
 
-const Question = ({ setQuestionValid, onSelect, data, config}) => {
-  const { question, choices } = config;
+const Question = ({ setQuestionValid, onSelect, data, config }) => {
+  const { question, choices, type } = config;
 
   return (
     <div className="question">
@@ -16,6 +16,7 @@ const Question = ({ setQuestionValid, onSelect, data, config}) => {
             key={`choice-${index}`}
             config={choiceConfig}
             selectedChoice={data}
+            type={type || ''}
             onSelect={value => {
               let newValue = value === data ? null : value;
               onSelect(newValue);

@@ -72,6 +72,30 @@ const quizConfig = {
           ]
         }
       ]
+    }, {
+      questions: [
+        {
+          question: "Do you have floor heating and/or low temperature radiators?",
+          type: "enum",
+          choices: [
+            {
+              label: "JA"
+            }, {
+              label: "NEE"
+            }
+          ]
+        }, {
+          question: "Do you already have solar panels?",
+          type: "enum",
+          choices: [
+            {
+              label: "JA"
+            }, {
+              label: "NEE"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

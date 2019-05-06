@@ -31,3 +31,17 @@
   font-size: 1.2em;
   margin-top: 20px;
 }
+
+.choice.enum {
+  max-width: 30%;
+}
+
+.choice.enum.selected {
+  border-color: #8ccc3b;
+  background: #8ccc3b;
+  color: #fff;
+}
+
+.choice.enum span {
+  margin-top: 0;
+}

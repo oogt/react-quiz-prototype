@@ -9,4 +9,5 @@
 
 .question .choices {
   display: flex;
+  justify-content: center;
 }
