@@ -50,7 +50,8 @@ class Step extends Component {
       stepNumber,
       activeStep,
       onConfirm,
-      goBack
+      goBack,
+      numberOfSteps
     } = this.props;
 
     return (
@@ -86,7 +87,7 @@ class Step extends Component {
               disabled={!this.state.isStepValid}
               onClick={() => onConfirm()}
             >
-              Bevestig keuze
+              {activeStep === (numberOfSteps - 1) ? 'Bekijk resultaat' : 'Bevestig keuze'}
             </Button>
           </div>
         </CSSTransition>

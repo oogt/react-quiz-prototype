@@ -2,12 +2,13 @@ import React, { Component } from "react";
 
 import Step from "./step";
 import ProgressBar from "./progress-bar";
+import Result from "./result";
 
 class Quiz extends Component {
   constructor(props) {
     super(props);
 
-    this.numberOfSteps = props.quizConfig.steps.length;
+    this.numberOfSteps = props.quizConfig.steps.length + 1;
     const initialData = props.quizConfig.steps.map(step =>
       step.questions.map(() => null)
     );
@@ -56,6 +57,7 @@ class Quiz extends Component {
           <Step
             config={stepConfig}
             stepNumber={index + 1}
+            numberOfSteps={this.numberOfSteps}
             activeStep={this.state.currentStep}
             onConfirm={stepData => {
               this._nextStep();
@@ -66,6 +68,12 @@ class Quiz extends Component {
             key={`step-${index + 1}`}
           />
         ))}
+        <Result
+          data={this.state.data}
+          activeStep={this.state.currentStep}
+          numberOfSteps={this.numberOfSteps}
+          goBack={this._prevStep}
+        />
       </div>
     );
   }
